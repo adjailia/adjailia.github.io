@@ -351,10 +351,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#probability-basics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        أساسيات الاحتمالات
+        أساسيات الاحتمالات (Probability Basics)
       
     </span>
   </a>
@@ -362,10 +362,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#combinatorics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        التوافقات والتباديل
+        التوافقات والتباديل (Combinatorics)
       
     </span>
   </a>
@@ -520,10 +520,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#probability-basics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        أساسيات الاحتمالات
+        أساسيات الاحتمالات (Probability Basics)
       
     </span>
   </a>
@@ -531,10 +531,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#combinatorics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        التوافقات والتباديل
+        التوافقات والتباديل (Combinatorics)
       
     </span>
   </a>
@@ -613,8 +613,23 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="_1"><a class="toclink" href="../../2026/02/21/%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D8%A7%D8%AA/">أساسيات الاحتمالات</a></h2>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ General Mathematics.</p>
+    <h2 id="probability-basics"><a class="toclink" href="../../2026/02/21/%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D8%A7%D8%AA-probability-basics/">أساسيات الاحتمالات (Probability Basics)</a></h2>
+<p>الاحتمالات هي لغة عدم اليقين، وهي المحرك الذي يسمح لنماذج الذكاء الاصطناعي بتقديم "توقعات" بدلاً من مجرد إجابات ثابتة.</p>
+<h3 id="_1"><a class="toclink" href="../../2026/02/21/%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D8%A7%D8%AA-probability-basics/#_1">المفاهيم الأساسية:</a></h3>
+<ol>
+<li><strong>التجربة العشوائية:</strong> عملية نتيجتها غير مؤكدة (مثل رمي زهر النرد).</li>
+<li><strong>فضاء العينة (<span class="arithmatex"><span class="MathJax_Preview">S</span><script type="math/tex">S</script></span>):</strong> مجموعة كل النتائج الممكنة.</li>
+<li><strong>الحدث (<span class="arithmatex"><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span>):</strong> هو أي مجموعة جزئية من فضاء العينة.</li>
+</ol>
+<h3 id="_2"><a class="toclink" href="../../2026/02/21/%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D8%A7%D8%AA-probability-basics/#_2">قانون الاحتمال الأساسي:</a></h3>
+<div class="arithmatex">
+<div class="MathJax_Preview"> P(A) = \frac{\text{عدد النتائج المواتية}}{\text{إجمالي عدد النتائج الممكنة}} </div>
+<script type="math/tex; mode=display"> P(A) = \frac{\text{عدد النتائج المواتية}}{\text{إجمالي عدد النتائج الممكنة}} </script>
+</div>
+<h4 id="conditional-probability"><a class="toclink" href="../../2026/02/21/%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D8%A7%D8%AA-probability-basics/#conditional-probability">الاحتمال الشرطي (Conditional Probability):</a></h4>
+<p>وهو احتمال وقوع حدث <span class="arithmatex"><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span> بشرط وقوع الحدث <span class="arithmatex"><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>:
+$$ P(A|B) = \frac{P(A \cap B)}{P(B)} $$</p>
+<p>هذا القانون هو الأساس الذي بنيت عليه <strong>خوارزمية Naive Bayes</strong> المستخدمة في تصنيف الرسائل المزعجة (Spam Detection).</p>
     
     
   </div>
@@ -655,8 +670,16 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="_1"><a class="toclink" href="../../2026/02/21/%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D9%81%D9%82%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AA%D8%A8%D8%A7%D8%AF%D9%8A%D9%84/">التوافقات والتباديل</a></h2>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ General Mathematics.</p>
+    <h2 id="combinatorics"><a class="toclink" href="../../2026/02/21/%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D9%81%D9%82%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AA%D8%A8%D8%A7%D8%AF%D9%8A%D9%84-combinatorics/">التوافقات والتباديل (Combinatorics)</a></h2>
+<p>التحليل التوافيقي يساعدنا في معرفة عدد الطرق الممكنة لترتيب أو اختيار الأشياء، وهو مهم جداً في حساب احتمالات الشبكات الكبيرة.</p>
+<h3 id="1-permutations"><a class="toclink" href="../../2026/02/21/%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D9%81%D9%82%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AA%D8%A8%D8%A7%D8%AF%D9%8A%D9%84-combinatorics/#1-permutations">1. التباديل (Permutations)</a></h3>
+<p>تستخدم عندما يكون <strong>الترتيب مهماً</strong>.
+$$ P(n, r) = \frac{n!}{(n-r)!} $$</p>
+<h3 id="2-combinations"><a class="toclink" href="../../2026/02/21/%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D9%81%D9%82%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AA%D8%A8%D8%A7%D8%AF%D9%8A%D9%84-combinatorics/#2-combinations">2. التوافيق (Combinations)</a></h3>
+<p>تستخدم عندما يكون <strong>الترتيب غير مهم</strong>.
+$$ C(n, r) = \binom{n}{r} = \frac{n!}{r!(n-r)!} $$</p>
+<h4 id="_1"><a class="toclink" href="../../2026/02/21/%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D9%81%D9%82%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AA%D8%A8%D8%A7%D8%AF%D9%8A%D9%84-combinatorics/#_1">لماذا نحتاجها؟</a></h4>
+<p>في الذكاء الاصطناعي، نحتاج لمعرفة عدد التشكيلات الممكنة للنماذج، أو عدد الطرق التي يمكن بها توصيل الخلايا العصبية ببعضها البعض في المعالجات المتوازية.</p>
     
     
   </div>

@@ -430,6 +430,64 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        أشهر الأنواع:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="أشهر الأنواع:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-mean-squared-error-mse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. متوسط مربع الخطأ (Mean Squared Error - MSE)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cross-entropy-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. الخسارة اللوغاريتمية (Cross-Entropy Loss)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الهدف
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -534,7 +592,16 @@
 
 
 <h1 id="loss-functions">دوال الخسارة (Loss Functions)<a class="headerlink" href="#loss-functions" title="Permanent link">&para;</a></h1>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ AI Mathematics.</p>
+<p>دالة الخسارة هي المقياس الذي يخبرنا "كم يبعد" ذكاء الآلة عن الحقيقة. كلما كانت قيمة الخسارة أقل، كان النموذج أدق.</p>
+<h2 id="_1">أشهر الأنواع:<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="1-mean-squared-error-mse">1. متوسط مربع الخطأ (Mean Squared Error - MSE)<a class="headerlink" href="#1-mean-squared-error-mse" title="Permanent link">&para;</a></h3>
+<p>تستخدم غالباً في التنبؤ بالقيم العددية (مثل أسعار المنازل).
+$$ MSE = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2 $$</p>
+<h3 id="2-cross-entropy-loss">2. الخسارة اللوغاريتمية (Cross-Entropy Loss)<a class="headerlink" href="#2-cross-entropy-loss" title="Permanent link">&para;</a></h3>
+<p>تستخدم في مهام التصنيف (مثل: هل هذه قطة أم كلب؟).
+$$ L = -\sum y_i \log(\hat{y}_i) $$</p>
+<h2 id="_2">الهدف<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>عملية تدريب أي شبكة عصبية هي محاولة "تقليل" (Minimize) هذه الدوال للوصول لأفضل أداء ممكن.</p>
 
 
 

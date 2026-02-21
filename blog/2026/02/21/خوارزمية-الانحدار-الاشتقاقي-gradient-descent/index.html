@@ -430,6 +430,53 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        المبدأ الأساسي
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        المعادلة الرياضية
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="المعادلة الرياضية">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        التحديات:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -534,7 +581,20 @@
 
 
 <h1 id="gradient-descent">خوارزمية الانحدار الاشتقاقي (Gradient Descent)<a class="headerlink" href="#gradient-descent" title="Permanent link">&para;</a></h1>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ AI Mathematics.</p>
+<p>إذا كان الذكاء الاصطناعي هو "العقل"، فإن الانحدار الاشتقاقي هو "المحرك" الذي يجعله يتعلم من الأخطاء.</p>
+<h2 id="_1">المبدأ الأساسي<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>تخيل أنك فوق جبل وتريد الوصول للقاع في ضباب كثيف. أنت لا ترى القاع، لكنك تشعر بميل الأرض تحت قدميك. ستتحرك في الاتجاه الذي ينحدر للأسفل. هذا تماماً ما يفعله Gradient Descent.</p>
+<h2 id="_2">المعادلة الرياضية<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>نقوم بتحديث الأوزان (<span class="arithmatex"><span class="MathJax_Preview">w</span><script type="math/tex">w</script></span>) باستمرار للوصول للحد الأدنى من دالة الخسارة:
+$$ w = w - \eta \cdot \nabla L(w) $$</p>
+<p>حيث:
+- <span class="arithmatex"><span class="MathJax_Preview">\nabla L(w)</span><script type="math/tex">\nabla L(w)</script></span>: هو "المشتق" الذي يحدد اتجاه الانحدار.
+- <span class="arithmatex"><span class="MathJax_Preview">\eta</span><script type="math/tex">\eta</script></span> (Learning Rate): هي طول الخطوة التي نخطوها للأسفل.</p>
+<h3 id="_3">التحديات:<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>معدل تعلم كبير جداً:</strong> قد نتخطى القاع ونضيع.</li>
+<li><strong>معدل تعلم صغير جداً:</strong> سنستغرق وقتاً طويلاً جداً للوصول.</li>
+</ol>
 
 
 

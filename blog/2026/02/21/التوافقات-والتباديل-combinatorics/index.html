@@ -12,13 +12,13 @@
         <meta name="author" content="Boubaker">
       
       
-        <link rel="canonical" href="https://adjailia.github.io/adjailia.github.io/blog/2026/02/21/%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D9%84%D8%BA%D8%A7%D8%B1%D8%AA%D9%85%D9%8A%D8%A9/">
+        <link rel="canonical" href="https://adjailia.github.io/adjailia.github.io/blog/2026/02/21/%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D9%81%D9%82%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AA%D8%A8%D8%A7%D8%AF%D9%8A%D9%84-combinatorics/">
       
       
-        <link rel="prev" href="../%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%B9%D9%8A%D8%A9/">
+        <link rel="prev" href="../%D8%A7%D9%84%D9%85%D8%AA%D8%AA%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9/">
       
       
-        <link rel="next" href="../%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%AE%D8%B7%D9%8A%D8%A9/">
+        <link rel="next" href="../%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D8%A7%D8%AA-probability-basics/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>الدوال اللغارتمية - adjailia boubaker AI</title>
+        <title>التوافقات والتباديل (Combinatorics) - adjailia boubaker AI</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#combinatorics" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              الدوال اللغارتمية
+              التوافقات والتباديل (Combinatorics)
             
           </span>
         </div>
@@ -430,6 +430,53 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-permutations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. التباديل (Permutations)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-combinations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. التوافيق (Combinations)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. التوافيق (Combinations)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        لماذا نحتاجها؟
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -533,8 +580,16 @@
   
 
 
-<h1 id="_1">الدوال اللغارتمية<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ General Mathematics.</p>
+<h1 id="combinatorics">التوافقات والتباديل (Combinatorics)<a class="headerlink" href="#combinatorics" title="Permanent link">&para;</a></h1>
+<p>التحليل التوافيقي يساعدنا في معرفة عدد الطرق الممكنة لترتيب أو اختيار الأشياء، وهو مهم جداً في حساب احتمالات الشبكات الكبيرة.</p>
+<h2 id="1-permutations">1. التباديل (Permutations)<a class="headerlink" href="#1-permutations" title="Permanent link">&para;</a></h2>
+<p>تستخدم عندما يكون <strong>الترتيب مهماً</strong>.
+$$ P(n, r) = \frac{n!}{(n-r)!} $$</p>
+<h2 id="2-combinations">2. التوافيق (Combinations)<a class="headerlink" href="#2-combinations" title="Permanent link">&para;</a></h2>
+<p>تستخدم عندما يكون <strong>الترتيب غير مهم</strong>.
+$$ C(n, r) = \binom{n}{r} = \frac{n!}{r!(n-r)!} $$</p>
+<h3 id="_1">لماذا نحتاجها؟<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>في الذكاء الاصطناعي، نحتاج لمعرفة عدد التشكيلات الممكنة للنماذج، أو عدد الطرق التي يمكن بها توصيل الخلايا العصبية ببعضها البعض في المعالجات المتوازية.</p>
 
 
 

@@ -891,7 +891,16 @@ $$ \tanh(x) = \frac{e^x - e<sup>{-x}}{e</sup>x + e^{-x}} $$</p>
   </header>
   <div class="md-post__content md-typeset">
     <h2 id="loss-functions"><a class="toclink" href="../../2026/02/21/%D8%AF%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-loss-functions/">دوال الخسارة (Loss Functions)</a></h2>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ AI Mathematics.</p>
+<p>دالة الخسارة هي المقياس الذي يخبرنا "كم يبعد" ذكاء الآلة عن الحقيقة. كلما كانت قيمة الخسارة أقل، كان النموذج أدق.</p>
+<h3 id="_1"><a class="toclink" href="../../2026/02/21/%D8%AF%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-loss-functions/#_1">أشهر الأنواع:</a></h3>
+<h4 id="1-mean-squared-error-mse"><a class="toclink" href="../../2026/02/21/%D8%AF%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-loss-functions/#1-mean-squared-error-mse">1. متوسط مربع الخطأ (Mean Squared Error - MSE)</a></h4>
+<p>تستخدم غالباً في التنبؤ بالقيم العددية (مثل أسعار المنازل).
+$$ MSE = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2 $$</p>
+<h4 id="2-cross-entropy-loss"><a class="toclink" href="../../2026/02/21/%D8%AF%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-loss-functions/#2-cross-entropy-loss">2. الخسارة اللوغاريتمية (Cross-Entropy Loss)</a></h4>
+<p>تستخدم في مهام التصنيف (مثل: هل هذه قطة أم كلب؟).
+$$ L = -\sum y_i \log(\hat{y}_i) $$</p>
+<h3 id="_2"><a class="toclink" href="../../2026/02/21/%D8%AF%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-loss-functions/#_2">الهدف</a></h3>
+<p>عملية تدريب أي شبكة عصبية هي محاولة "تقليل" (Minimize) هذه الدوال للوصول لأفضل أداء ممكن.</p>
     
     
   </div>

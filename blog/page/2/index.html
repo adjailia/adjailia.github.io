@@ -796,7 +796,20 @@ $$ w_{new} = w_{old} - \eta \cdot \frac{\partial L}{\partial w} $$
   </header>
   <div class="md-post__content md-typeset">
     <h2 id="gradient-descent"><a class="toclink" href="../../2026/02/21/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D9%86%D8%AD%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D9%82%D8%A7%D9%82%D9%8A-gradient-descent/">خوارزمية الانحدار الاشتقاقي (Gradient Descent)</a></h2>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ AI Mathematics.</p>
+<p>إذا كان الذكاء الاصطناعي هو "العقل"، فإن الانحدار الاشتقاقي هو "المحرك" الذي يجعله يتعلم من الأخطاء.</p>
+<h3 id="_1"><a class="toclink" href="../../2026/02/21/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D9%86%D8%AD%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D9%82%D8%A7%D9%82%D9%8A-gradient-descent/#_1">المبدأ الأساسي</a></h3>
+<p>تخيل أنك فوق جبل وتريد الوصول للقاع في ضباب كثيف. أنت لا ترى القاع، لكنك تشعر بميل الأرض تحت قدميك. ستتحرك في الاتجاه الذي ينحدر للأسفل. هذا تماماً ما يفعله Gradient Descent.</p>
+<h3 id="_2"><a class="toclink" href="../../2026/02/21/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D9%86%D8%AD%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D9%82%D8%A7%D9%82%D9%8A-gradient-descent/#_2">المعادلة الرياضية</a></h3>
+<p>نقوم بتحديث الأوزان (<span class="arithmatex"><span class="MathJax_Preview">w</span><script type="math/tex">w</script></span>) باستمرار للوصول للحد الأدنى من دالة الخسارة:
+$$ w = w - \eta \cdot \nabla L(w) $$</p>
+<p>حيث:
+- <span class="arithmatex"><span class="MathJax_Preview">\nabla L(w)</span><script type="math/tex">\nabla L(w)</script></span>: هو "المشتق" الذي يحدد اتجاه الانحدار.
+- <span class="arithmatex"><span class="MathJax_Preview">\eta</span><script type="math/tex">\eta</script></span> (Learning Rate): هي طول الخطوة التي نخطوها للأسفل.</p>
+<h4 id="_3"><a class="toclink" href="../../2026/02/21/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D9%86%D8%AD%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D9%82%D8%A7%D9%82%D9%8A-gradient-descent/#_3">التحديات:</a></h4>
+<ol>
+<li><strong>معدل تعلم كبير جداً:</strong> قد نتخطى القاع ونضيع.</li>
+<li><strong>معدل تعلم صغير جداً:</strong> سنستغرق وقتاً طويلاً جداً للوصول.</li>
+</ol>
     
     
   </div>

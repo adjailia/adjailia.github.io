@@ -12,13 +12,13 @@
         <meta name="author" content="Boubaker">
       
       
-        <link rel="canonical" href="https://adjailia.github.io/adjailia.github.io/blog/2026/02/21/%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D8%AB%D9%84%D8%AB%D9%8A%D8%A9/">
+        <link rel="canonical" href="https://adjailia.github.io/adjailia.github.io/blog/2026/02/21/%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D8%A7%D8%AA-probability-basics/">
       
       
-        <link rel="prev" href="../%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D8%A7%D8%AA/">
+        <link rel="prev" href="../%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D9%81%D9%82%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AA%D8%A8%D8%A7%D8%AF%D9%8A%D9%84-combinatorics/">
       
       
-        <link rel="next" href="../%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%B9%D9%8A%D8%A9/">
+        <link rel="next" href="../%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D8%AB%D9%84%D8%AB%D9%8A%D8%A9-trigonometric-functions/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>الدوال المثلثية - adjailia boubaker AI</title>
+        <title>أساسيات الاحتمالات (Probability Basics) - adjailia boubaker AI</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#probability-basics" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              الدوال المثلثية
+              أساسيات الاحتمالات (Probability Basics)
             
           </span>
         </div>
@@ -430,6 +430,53 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        المفاهيم الأساسية:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        قانون الاحتمال الأساسي:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="قانون الاحتمال الأساسي:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conditional-probability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الاحتمال الشرطي (Conditional Probability):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -533,8 +580,23 @@
   
 
 
-<h1 id="_1">الدوال المثلثية<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ General Mathematics.</p>
+<h1 id="probability-basics">أساسيات الاحتمالات (Probability Basics)<a class="headerlink" href="#probability-basics" title="Permanent link">&para;</a></h1>
+<p>الاحتمالات هي لغة عدم اليقين، وهي المحرك الذي يسمح لنماذج الذكاء الاصطناعي بتقديم "توقعات" بدلاً من مجرد إجابات ثابتة.</p>
+<h2 id="_1">المفاهيم الأساسية:<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>التجربة العشوائية:</strong> عملية نتيجتها غير مؤكدة (مثل رمي زهر النرد).</li>
+<li><strong>فضاء العينة (<span class="arithmatex"><span class="MathJax_Preview">S</span><script type="math/tex">S</script></span>):</strong> مجموعة كل النتائج الممكنة.</li>
+<li><strong>الحدث (<span class="arithmatex"><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span>):</strong> هو أي مجموعة جزئية من فضاء العينة.</li>
+</ol>
+<h2 id="_2">قانون الاحتمال الأساسي:<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">
+<div class="MathJax_Preview"> P(A) = \frac{\text{عدد النتائج المواتية}}{\text{إجمالي عدد النتائج الممكنة}} </div>
+<script type="math/tex; mode=display"> P(A) = \frac{\text{عدد النتائج المواتية}}{\text{إجمالي عدد النتائج الممكنة}} </script>
+</div>
+<h3 id="conditional-probability">الاحتمال الشرطي (Conditional Probability):<a class="headerlink" href="#conditional-probability" title="Permanent link">&para;</a></h3>
+<p>وهو احتمال وقوع حدث <span class="arithmatex"><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span> بشرط وقوع الحدث <span class="arithmatex"><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>:
+$$ P(A|B) = \frac{P(A \cap B)}{P(B)} $$</p>
+<p>هذا القانون هو الأساس الذي بنيت عليه <strong>خوارزمية Naive Bayes</strong> المستخدمة في تصنيف الرسائل المزعجة (Spam Detection).</p>
 
 
 
