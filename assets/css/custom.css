@@ -1,0 +1,11 @@
+/* Custom CSS to enlarge and enhance the logo in the header */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.5rem; /* Increase from default 1.2rem or 1.5rem */
+  width: auto;
+  max-width: 100%;
+}
+
+.md-header__button.md-logo {
+  padding: 0.2rem; /* Give it some breathing room */
+}
