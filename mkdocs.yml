@@ -47,7 +47,7 @@ plugins:
       suggest: true
       highlight: true
   - blog:
-      post_excerpt: 100
+      post_excerpt: optional
       post_readtime: true
       blog_dir: blog
       blog_toc: true
@@ -76,17 +76,13 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
-
-# Custom CSS for UI enhancements
-extra_css:
-  - assets/css/custom.css
   - pymdownx.tilde
 
 # Extra static files (CSS, JS)
 extra_css:
-  - "assets/css/custom.css"
+  - assets/css/custom.css
 extra_javascript:
-  - "assets/js/custom.js"
+  - assets/js/custom.js
 
 # GitHub Deployment Options
 repo_url: "https://github.com/adjailia/adjailia.github.io"
