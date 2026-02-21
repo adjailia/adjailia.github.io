@@ -1,6 +1,6 @@
 # mkdocs.yml - MkDocs Material Configuration
-site_name: "My Project"
-site_description: "Complete Project Documentation"
+site_name: "Boubaker Blog"
+site_description: "Linux and Open Source Tutorials"
 site_author: "Boubaker"
 site_url: "https://adjailia.github.io/adjailia.github.io/"
 
@@ -11,30 +11,33 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: "indigo"
-      accent: "pink"
+      primary: "deep purple"
+      accent: "blue"
       toggle:
         icon: material/brightness-7
         name: "Dark Mode"
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: "indigo"
-      accent: "pink"
+      primary: "deep purple"
+      accent: "blue"
       toggle:
         icon: material/brightness-4
         name: "Light Mode"
   features:
     - navigation.indexes        # Allow clicking on folders to open index.md
-    - navigation.tabs           # Nav tabs at the top
     - navigation.sections       # Sidebar sections
     - search.highlight          # Highlight search results
     - search.suggest            # Search suggestions
-    - toc.integrate             # Integrate TOC into the page
     - content.code.annotate     # Code annotations
+    # Removed toc.integrate to let the Table of Contents appear on the RIGHT side.
 
 # Left Sidebar Navigation
 nav:
   - Home: index.md
+  - Tutorials:
+    - "Free Site with GitHub and MkDocs": tutorials/free-site-github.md
+    - "Linux Post Installation": tutorials/linux-post-install.md
+    - "Home Server setup": tutorials/home-server.md
 
 # Plugins
 plugins:
