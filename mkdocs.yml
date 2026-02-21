@@ -1,5 +1,5 @@
 # mkdocs.yml - MkDocs Material Configuration
-site_name: "Boubaker AI Blog"
+site_name: "adjailia boubaker AI"
 site_description: "Artificial Intelligence, Math, and Computer Vision"
 site_author: "Boubaker"
 site_url: "https://adjailia.github.io/adjailia.github.io/"
@@ -71,6 +71,10 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
+
+# Custom CSS for UI enhancements
+extra_css:
+  - assets/css/custom.css
   - pymdownx.tilde
 
 # Extra static files (CSS, JS)
