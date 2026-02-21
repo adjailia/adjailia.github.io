@@ -32,11 +32,6 @@ theme:
     - toc.integrate             # دمج جدول المحتويات داخل الصفحة
     - content.code.annotate     # توضيح الأكواد
 
-# إعدادات البحث
-search:
-  lang: ["ar"]
-  separator: '[\s\-]+'
-
 # القائمة الجانبية (Navigation) - مثال تنظيمي متقدم
 nav:
   - الصفحة الرئيسية: index.md
@@ -49,8 +44,6 @@ nav:
 # الإضافات Plugins
 plugins:
   - search
-  - git-revision-date
-  - git-authors
   - minify:
       minify_html: true
 
