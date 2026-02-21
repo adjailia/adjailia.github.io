@@ -9,12 +9,20 @@ theme:
   name: "material"
   language: "ar"               # دعم العربية
   palette:
-    scheme: default            # اللون الافتراضي للنهار
-    primary: "indigo"          # اللون الرئيسي
-    accent: "pink"             # اللون الثانوي
-    toggle:
-      icon: material/toggle-switch
-      name: "الوضع الليلي"
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: "indigo"
+      accent: "pink"
+      toggle:
+        icon: material/brightness-7
+        name: "الوضع الليلي"
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: "indigo"
+      accent: "pink"
+      toggle:
+        icon: material/brightness-4
+        name: "الوضع النهاري"
   features:
     - navigation.tabs           # تبويبات أعلى الموقع
     - navigation.sections       # أقسام القائمة الجانبية
@@ -26,7 +34,7 @@ theme:
 # إعدادات البحث
 search:
   lang: ["ar"]
-  separator: "[\s\-]+"
+  separator: '[\s\-]+'
 
 # القائمة الجانبية (Navigation) - مثال تنظيمي متقدم
 nav:
