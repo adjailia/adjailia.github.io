@@ -44,8 +44,6 @@ nav:
 # الإضافات Plugins
 plugins:
   - search
-  - minify:
-      minify_html: true
 
 # إعدادات Markdown
 markdown_extensions:
