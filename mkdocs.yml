@@ -36,17 +36,22 @@ theme:
 # Left Sidebar Navigation
 nav:
   - Home: index.md
-  - Mathematics:
-    - "Linear Algebra Basics": ai/math-basics.md
-  - Computer Vision:
-    - "Image Classification": ai/computer-vision.md
-  - Deep Learning:
-    - "Model Training": ai/model-training.md
-    - "Fine-Tuning": ai/fine-tuning.md
+  - Blog: blog/index.md
+  - Tutorials:
+    - Free Site with GitHub: tutorials/free-site-github.md
+
 
 # Plugins
 plugins:
-  - search
+  - search:
+      suggest: true
+      highlight: true
+  - blog:
+      post_excerpt: 100
+      post_readtime: true
+      blog_dir: blog
+      blog_toc: true
+      authors_file: "{blog}/authors.yml"
 
 # Markdown Extensions
 markdown_extensions:
