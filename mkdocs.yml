@@ -13,14 +13,14 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: "deep purple"
+      primary: "green"
       accent: "blue"
       toggle:
         icon: material/brightness-7
         name: "Dark Mode"
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: "deep purple"
+      primary: "green"
       accent: "blue"
       toggle:
         icon: material/brightness-4
