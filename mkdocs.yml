@@ -43,9 +43,7 @@ nav:
 
 # Plugins
 plugins:
-  - search:
-      suggest: true
-      highlight: true
+  - search
   - blog:
       post_excerpt: optional
       post_readtime: true
