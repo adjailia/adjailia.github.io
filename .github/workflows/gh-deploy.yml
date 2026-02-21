@@ -24,5 +24,6 @@ jobs:
           pip install -r requirements.txt
       - name: MkDocs gh-deploy
         run: |
+          set -o pipefail
           git pull
-          mkdocs gh-deploy
+          mkdocs gh-deploy 2>&1 | awk '/MkDocs 2.0 is incompatible/{skip=8; next} skip>0{skip--; next} {print}'

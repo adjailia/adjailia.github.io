@@ -1,13 +1,15 @@
 # mkdocs.yml - MkDocs Material Configuration
-site_name: "Boubaker Blog"
-site_description: "Linux and Open Source Tutorials"
+site_name: "Boubaker AI Blog"
+site_description: "Artificial Intelligence, Math, and Computer Vision"
 site_author: "Boubaker"
 site_url: "https://adjailia.github.io/adjailia.github.io/"
 
 # Theme and Appearance
 theme:
   name: material
-  language: ar               # Arabic language support (RTL)
+  logo: assets/ai_logo.png
+  favicon: assets/ai_logo.png
+  language: en               # Switch to English for LTR layout (Nav left, TOC right)
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -34,10 +36,13 @@ theme:
 # Left Sidebar Navigation
 nav:
   - Home: index.md
-  - Tutorials:
-    - "Free Site with GitHub and MkDocs": tutorials/free-site-github.md
-    - "Linux Post Installation": tutorials/linux-post-install.md
-    - "Home Server setup": tutorials/home-server.md
+  - Mathematics:
+    - "Linear Algebra Basics": ai/math-basics.md
+  - Computer Vision:
+    - "Image Classification": ai/computer-vision.md
+  - Deep Learning:
+    - "Model Training": ai/model-training.md
+    - "Fine-Tuning": ai/fine-tuning.md
 
 # Plugins
 plugins:
