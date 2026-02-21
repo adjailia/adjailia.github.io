@@ -7,8 +7,8 @@ site_url: "https://adjailia.github.io/adjailia.github.io/"
 # Theme and Appearance
 theme:
   name: material
-  logo: assets/green_glass_logo.png
-  favicon: assets/green_glass_logo.png
+  logo: assets/copilot_green_logo.png
+  favicon: assets/copilot_green_logo.png
   language: en               # Switch to English for LTR layout (Nav left, TOC right)
   palette:
     - media: "(prefers-color-scheme: light)"
