@@ -50,6 +50,12 @@ plugins:
       blog_dir: blog
       blog_toc: true
       authors_file: "{blog}/authors.yml"
+      categories_allowed:
+        - General Mathematics
+        - AI Mathematics
+      archive: true
+      categories: true
+      draft: false
 
 # Markdown Extensions
 markdown_extensions:
