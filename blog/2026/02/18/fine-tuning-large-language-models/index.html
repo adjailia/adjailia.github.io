@@ -12,25 +12,29 @@
         <meta name="author" content="Boubaker">
       
       
+        <link rel="canonical" href="https://adjailia.github.io/adjailia.github.io/blog/2026/02/18/fine-tuning-large-language-models/">
       
+      
+      
+        <link rel="next" href="../../21/deep-learning-model-training/">
       
       
         
       
       
-      <link rel="icon" href="/adjailia.github.io/assets/final_glass_logo.png">
+      <link rel="icon" href="../../../../../assets/final_glass_logo.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
-        <title>adjailia boubaker AI</title>
+        <title>Fine-Tuning Large Language Models - adjailia boubaker AI</title>
       
     
     
-      <link rel="stylesheet" href="/adjailia.github.io/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/adjailia.github.io/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="/adjailia.github.io/assets/css/custom.css">
+      <link rel="stylesheet" href="../../../../../assets/css/custom.css">
     
-    <script>__md_scope=new URL("/adjailia.github.io/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -75,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#fine-tuning-large-language-models" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -87,9 +96,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/adjailia.github.io/." title="adjailia boubaker AI" class="md-header__button md-logo" aria-label="adjailia boubaker AI" data-md-component="logo">
+    <a href="../../../../.." title="adjailia boubaker AI" class="md-header__button md-logo" aria-label="adjailia boubaker AI" data-md-component="logo">
       
-  <img src="/adjailia.github.io/assets/final_glass_logo.png" alt="logo">
+  <img src="../../../../../assets/final_glass_logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -106,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Fine-Tuning Large Language Models
             
           </span>
         </div>
@@ -215,7 +224,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -224,9 +235,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/adjailia.github.io/." title="adjailia boubaker AI" class="md-nav__button md-logo" aria-label="adjailia boubaker AI" data-md-component="logo">
+    <a href="../../../../.." title="adjailia boubaker AI" class="md-nav__button md-logo" aria-label="adjailia boubaker AI" data-md-component="logo">
       
-  <img src="/adjailia.github.io/assets/final_glass_logo.png" alt="logo">
+  <img src="../../../../../assets/final_glass_logo.png" alt="logo">
 
     </a>
     adjailia boubaker AI
@@ -253,7 +264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/adjailia.github.io/." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   
@@ -277,12 +288,14 @@
       
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="/adjailia.github.io/blog/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   
@@ -365,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/adjailia.github.io/tutorials/free-site-github.md" class="md-nav__link">
+      <a href="../../../../../tutorials/free-site-github.md" class="md-nav__link">
         
   
   
@@ -401,6 +414,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -410,6 +425,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -418,15 +435,115 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              
-              <article class="md-content__inner md-typeset">
-                
-  <h1>404 - Not found</h1>
-
-              </article>
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
             </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="../../../../../assets/final_glass_logo.png" alt="adjailia boubaker">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          adjailia boubaker
+                        
+                      </strong>
+                      <br>
+                      AI Enthusiast & Researcher
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-02-18 00:00:00+00:00" class="md-ellipsis">February 18, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              1 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
           
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+  
+  
+
+
+<h1 id="fine-tuning-large-language-models">Fine-Tuning Large Language Models<a class="headerlink" href="#fine-tuning-large-language-models" title="Permanent link">&para;</a></h1>
+<p>دليل شامل حول كيفية تدريب وتحسين النماذج اللغوية الكبيرة (LLMs) باستخدام تقنيات الـ Fine-Tuning.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -487,12 +604,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/adjailia.github.io/", "features": ["navigation.indexes", "navigation.sections", "search.highlight", "search.suggest", "content.code.annotate"], "search": "/adjailia.github.io/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.indexes", "navigation.sections", "search.highlight", "search.suggest", "content.code.annotate"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/adjailia.github.io/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="/adjailia.github.io/assets/js/custom.js"></script>
+        <script src="../../../../../assets/js/custom.js"></script>
       
     
   </body>
