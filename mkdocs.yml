@@ -1,3 +1,98 @@
-site_name: My Docs
+# mkdocs.yml - قالب احترافي لـ MkDocs Material
+site_name: "مشروعي"
+site_description: "وثائق مشروع متكامل"
+site_author: "بوبكر"
+site_url: "https://<userName>.github.io/<repoName>/"
+
+# المظهر والسمات
 theme:
-  name: material
+  name: "material"
+  language: "ar"               # دعم العربية
+  palette:
+    scheme: default            # اللون الافتراضي للنهار
+    primary: "indigo"          # اللون الرئيسي
+    accent: "pink"             # اللون الثانوي
+    toggle:
+      icon: material/toggle-switch
+      name: "الوضع الليلي"
+  features:
+    - navigation.tabs           # تبويبات أعلى الموقع
+    - navigation.sections       # أقسام القائمة الجانبية
+    - search.highlight          # تمييز النتائج
+    - search.suggest            # اقتراحات البحث
+    - toc.integrate             # دمج جدول المحتويات داخل الصفحة
+    - content.code.annotate     # توضيح الأكواد
+
+# إعدادات البحث
+search:
+  lang: ["ar"]
+  separator: "[\s\-]+"
+
+# القائمة الجانبية (Navigation) - مثال تنظيمي متقدم
+nav:
+  - الصفحة الرئيسية: index.md
+  - الدليل السريع:
+      - "المقدمة": docs/guide/introduction.md
+      - "البدء السريع": docs/guide/quickstart.md
+  - المستخدم:
+      - "التثبيت": docs/user/installation.md
+      - "الإعدادات": docs/user/configuration.md
+      - "الميزات": docs/user/features.md
+  - التطوير:
+      - "هيكل المشروع": docs/developer/structure.md
+      - "API": docs/developer/api.md
+      - "التطوير المحلي": docs/developer/local.md
+  - ملاحظات الإصدار: docs/release-notes.md
+  - حول: docs/about.md
+
+# الإضافات Plugins
+plugins:
+  - search
+  - git-revision-date
+  - git-authors
+  - minify:
+      minify_html: true
+
+# إعدادات Markdown
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# ملفات static إضافية (شعارات، CSS، JS)
+extra_css:
+  - "assets/css/custom.css"
+extra_javascript:
+  - "assets/js/custom.js"
+
+# خيارات النشر
+repo_url: "https://github.com/<userName>/<repoName>"
+repo_name: "GitHub"
+edit_uri: "edit/main/docs/"
+
+# خيارات إضافية
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: "https://github.com/<userName>/<repoName>"
+    - icon: fontawesome/brands/twitter
+      link: "https://twitter.com/<userName>"
