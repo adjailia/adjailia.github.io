@@ -452,10 +452,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#neural-network-definition" class="md-nav__link">
     <span class="md-ellipsis">
       
-        تعريف الشبكة العصبية
+        ما هي الشبكة العصبية؟ (Neural Network Definition)
       
     </span>
   </a>
@@ -687,10 +687,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#neural-network-definition" class="md-nav__link">
     <span class="md-ellipsis">
       
-        تعريف الشبكة العصبية
+        ما هي الشبكة العصبية؟ (Neural Network Definition)
       
     </span>
   </a>
@@ -917,7 +917,17 @@
   </header>
   <div class="md-post__content md-typeset">
     <h2 id="activation-functions"><a class="toclink" href="2026/02/21/%D8%AF%D9%88%D8%A7%D9%84-%D8%AA%D9%81%D8%B9%D9%8A%D9%84-%D8%A7%D9%84%D8%A3%D9%88%D8%B2%D8%A7%D9%86-activation-functions/">دوال تفعيل الأوزان (Activation Functions)</a></h2>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ AI Mathematics.</p>
+<p>بدون دوال التفعيل، ستكون الشبكة العصبية مجرد عملية خطية بسيطة غير قادرة على حل المشاكل المعقدة.</p>
+<h3 id="_1"><a class="toclink" href="2026/02/21/%D8%AF%D9%88%D8%A7%D9%84-%D8%AA%D9%81%D8%B9%D9%8A%D9%84-%D8%A7%D9%84%D8%A3%D9%88%D8%B2%D8%A7%D9%86-activation-functions/#_1">أهم الدوال المستخدمة:</a></h3>
+<h4 id="1-sigmoid"><a class="toclink" href="2026/02/21/%D8%AF%D9%88%D8%A7%D9%84-%D8%AA%D9%81%D8%B9%D9%8A%D9%84-%D8%A7%D9%84%D8%A3%D9%88%D8%B2%D8%A7%D9%86-activation-functions/#1-sigmoid">1. دالة Sigmoid</a></h4>
+<p>تحول أي قيمة مدخلة إلى نطاق بين 0 و 1. مفيدة جداً في التوقعات الاحتمالية.
+$$ \sigma(x) = \frac{1}{1 + e^{-x}} $$</p>
+<h4 id="2-relu-rectified-linear-unit"><a class="toclink" href="2026/02/21/%D8%AF%D9%88%D8%A7%D9%84-%D8%AA%D9%81%D8%B9%D9%8A%D9%84-%D8%A7%D9%84%D8%A3%D9%88%D8%B2%D8%A7%D9%86-activation-functions/#2-relu-rectified-linear-unit">2. دالة ReLU (Rectified Linear Unit)</a></h4>
+<p>الأكثر شهرة واستخداماً اليوم بسبب سرعتها.
+$$ f(x) = \max(0, x) $$</p>
+<h4 id="3-tanh"><a class="toclink" href="2026/02/21/%D8%AF%D9%88%D8%A7%D9%84-%D8%AA%D9%81%D8%B9%D9%8A%D9%84-%D8%A7%D9%84%D8%A3%D9%88%D8%B2%D8%A7%D9%86-activation-functions/#3-tanh">3. دالة Tanh</a></h4>
+<p>تحول القيم إلى نطاق بين -1 و 1، مما يساعد في تمركز البيانات حول الصفر.
+$$ \tanh(x) = \frac{e^x - e<sup>{-x}}{e</sup>x + e^{-x}} $$</p>
     
     
   </div>
@@ -1126,8 +1136,25 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="_1"><a class="toclink" href="2026/02/21/%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B5%D8%A8%D9%8A%D8%A9/">تعريف الشبكة العصبية</a></h2>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ AI Mathematics.</p>
+    <h2 id="neural-network-definition"><a class="toclink" href="2026/02/21/%D9%85%D8%A7-%D9%87%D9%8A-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B5%D8%A8%D9%8A%D8%A9-neural-network-definition/">ما هي الشبكة العصبية؟ (Neural Network Definition)</a></h2>
+<p>الشبكة العصبية هي حجر الأساس في تعلم الآلة الحديث، وهي محاكاة رياضية مبسطة لطريقة عمل الخلايا العصبية في دماغ الإنسان.</p>
+<h3 id="_1"><a class="toclink" href="2026/02/21/%D9%85%D8%A7-%D9%87%D9%8A-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B5%D8%A8%D9%8A%D8%A9-neural-network-definition/#_1">الهيكل الأساسي</a></h3>
+<p>تتكون الشبكة العصبية من ثلاث طبقات رئيسية:
+1. <strong>طبقة الإدخال (Input Layer):</strong> تستقبل البيانات الخام (مثل بكسلات الصورة).
+2. <strong>الطبقات الخفية (Hidden Layers):</strong> حيث تحدث العمليات الحسابية المعقدة واستخراج الأنماط.
+3. <strong>طبقة الإخراج (Output Layer):</strong> تعطي النتيجة النهائية (مثل: هذه صورة قطة).</p>
+<h3 id="_2"><a class="toclink" href="2026/02/21/%D9%85%D8%A7-%D9%87%D9%8A-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B5%D8%A8%D9%8A%D8%A9-neural-network-definition/#_2">كيف تعمل؟</a></h3>
+<p>لكل خلية عصبية (Neuron) مدخلات يتم ضربها في "أوزان" محددة، ثم يضاف إليها "عامل انحياز"، وتمر عبر دالة تفعيل.
+العملية الرياضية يمكن تمثيلها كالتالي:</p>
+<div class="arithmatex">
+<div class="MathJax_Preview"> y = f(\sum (w_i \cdot x_i) + b) </div>
+<script type="math/tex; mode=display"> y = f(\sum (w_i \cdot x_i) + b) </script>
+</div>
+<p>حيث:
+- <span class="arithmatex"><span class="MathJax_Preview">x_i</span><script type="math/tex">x_i</script></span>: المدخلات.
+- <span class="arithmatex"><span class="MathJax_Preview">w_i</span><script type="math/tex">w_i</script></span>: الأوزان (Weights).
+- <span class="arithmatex"><span class="MathJax_Preview">b</span><script type="math/tex">b</script></span>: الانحياز (Bias).
+- <span class="arithmatex"><span class="MathJax_Preview">f</span><script type="math/tex">f</script></span>: دالة التفعيل (Activation Function).</p>
     
     
   </div>

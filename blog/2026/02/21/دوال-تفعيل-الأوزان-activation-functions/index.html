@@ -430,6 +430,64 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        أهم الدوال المستخدمة:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="أهم الدوال المستخدمة:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sigmoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. دالة Sigmoid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-relu-rectified-linear-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. دالة ReLU (Rectified Linear Unit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-tanh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. دالة Tanh
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -534,7 +592,17 @@
 
 
 <h1 id="activation-functions">دوال تفعيل الأوزان (Activation Functions)<a class="headerlink" href="#activation-functions" title="Permanent link">&para;</a></h1>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ AI Mathematics.</p>
+<p>بدون دوال التفعيل، ستكون الشبكة العصبية مجرد عملية خطية بسيطة غير قادرة على حل المشاكل المعقدة.</p>
+<h2 id="_1">أهم الدوال المستخدمة:<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="1-sigmoid">1. دالة Sigmoid<a class="headerlink" href="#1-sigmoid" title="Permanent link">&para;</a></h3>
+<p>تحول أي قيمة مدخلة إلى نطاق بين 0 و 1. مفيدة جداً في التوقعات الاحتمالية.
+$$ \sigma(x) = \frac{1}{1 + e^{-x}} $$</p>
+<h3 id="2-relu-rectified-linear-unit">2. دالة ReLU (Rectified Linear Unit)<a class="headerlink" href="#2-relu-rectified-linear-unit" title="Permanent link">&para;</a></h3>
+<p>الأكثر شهرة واستخداماً اليوم بسبب سرعتها.
+$$ f(x) = \max(0, x) $$</p>
+<h3 id="3-tanh">3. دالة Tanh<a class="headerlink" href="#3-tanh" title="Permanent link">&para;</a></h3>
+<p>تحول القيم إلى نطاق بين -1 و 1، مما يساعد في تمركز البيانات حول الصفر.
+$$ \tanh(x) = \frac{e^x - e<sup>{-x}}{e</sup>x + e^{-x}} $$</p>
 
 
 

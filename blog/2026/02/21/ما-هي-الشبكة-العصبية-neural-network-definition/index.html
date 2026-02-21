@@ -12,13 +12,13 @@
         <meta name="author" content="Boubaker">
       
       
-        <link rel="canonical" href="https://adjailia.github.io/adjailia.github.io/blog/2026/02/21/%D8%A7%D9%84%D9%85%D8%AA%D8%AA%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%D9%8A%D8%A9/">
+        <link rel="canonical" href="https://adjailia.github.io/adjailia.github.io/blog/2026/02/21/%D9%85%D8%A7-%D9%87%D9%8A-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B5%D8%A8%D9%8A%D8%A9-neural-network-definition/">
       
       
-        <link rel="prev" href="../%D8%A7%D9%84%D9%85%D8%AA%D8%AA%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9/">
+        <link rel="prev" href="../%D9%85%D9%81%D9%87%D9%88%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D8%B2%D8%A7%D9%86-weights-%D9%88%D8%B9%D9%86%D8%B5%D8%B1-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%8A%D8%AF-bias/">
       
       
-        <link rel="next" href="../%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D9%81%D9%82%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AA%D8%A8%D8%A7%D8%AF%D9%8A%D9%84/">
+        <link rel="next" href="../%D8%A8%D9%86%D8%A7%D8%A1-%D9%87%D9%83%D9%8A%D9%84-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B5%D8%A8%D9%8A%D8%A9/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>المتتاليات الحسابية - adjailia boubaker AI</title>
+        <title>ما هي الشبكة العصبية؟ (Neural Network Definition) - adjailia boubaker AI</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#neural-network-definition" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              المتتاليات الحسابية
+              ما هي الشبكة العصبية؟ (Neural Network Definition)
             
           </span>
         </div>
@@ -430,6 +430,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الهيكل الأساسي
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        كيف تعمل؟
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -495,7 +525,7 @@
                           <span class="md-ellipsis">
                             in
                             
-                              <a href="../../../../category/general-mathematics/">General Mathematics</a></span>
+                              <a href="../../../../category/ai-mathematics/">AI Mathematics</a></span>
                         </div>
                       </li>
                     
@@ -533,8 +563,25 @@
   
 
 
-<h1 id="_1">المتتاليات الحسابية<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ General Mathematics.</p>
+<h1 id="neural-network-definition">ما هي الشبكة العصبية؟ (Neural Network Definition)<a class="headerlink" href="#neural-network-definition" title="Permanent link">&para;</a></h1>
+<p>الشبكة العصبية هي حجر الأساس في تعلم الآلة الحديث، وهي محاكاة رياضية مبسطة لطريقة عمل الخلايا العصبية في دماغ الإنسان.</p>
+<h2 id="_1">الهيكل الأساسي<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>تتكون الشبكة العصبية من ثلاث طبقات رئيسية:
+1. <strong>طبقة الإدخال (Input Layer):</strong> تستقبل البيانات الخام (مثل بكسلات الصورة).
+2. <strong>الطبقات الخفية (Hidden Layers):</strong> حيث تحدث العمليات الحسابية المعقدة واستخراج الأنماط.
+3. <strong>طبقة الإخراج (Output Layer):</strong> تعطي النتيجة النهائية (مثل: هذه صورة قطة).</p>
+<h2 id="_2">كيف تعمل؟<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>لكل خلية عصبية (Neuron) مدخلات يتم ضربها في "أوزان" محددة، ثم يضاف إليها "عامل انحياز"، وتمر عبر دالة تفعيل.
+العملية الرياضية يمكن تمثيلها كالتالي:</p>
+<div class="arithmatex">
+<div class="MathJax_Preview"> y = f(\sum (w_i \cdot x_i) + b) </div>
+<script type="math/tex; mode=display"> y = f(\sum (w_i \cdot x_i) + b) </script>
+</div>
+<p>حيث:
+- <span class="arithmatex"><span class="MathJax_Preview">x_i</span><script type="math/tex">x_i</script></span>: المدخلات.
+- <span class="arithmatex"><span class="MathJax_Preview">w_i</span><script type="math/tex">w_i</script></span>: الأوزان (Weights).
+- <span class="arithmatex"><span class="MathJax_Preview">b</span><script type="math/tex">b</script></span>: الانحياز (Bias).
+- <span class="arithmatex"><span class="MathJax_Preview">f</span><script type="math/tex">f</script></span>: دالة التفعيل (Activation Function).</p>
 
 
 

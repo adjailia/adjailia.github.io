@@ -12,13 +12,13 @@
         <meta name="author" content="Boubaker">
       
       
-        <link rel="canonical" href="https://adjailia.github.io/adjailia.github.io/blog/2026/02/21/%D9%85%D9%81%D9%87%D9%88%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D8%B2%D8%A7%D9%86-%D9%88%D8%B9%D9%86%D8%B5%D8%B1-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%8A%D8%AF/">
+        <link rel="canonical" href="https://adjailia.github.io/adjailia.github.io/blog/2026/02/21/%D9%85%D9%81%D9%87%D9%88%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D8%B2%D8%A7%D9%86-weights-%D9%88%D8%B9%D9%86%D8%B5%D8%B1-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%8A%D8%AF-bias/">
       
       
         <link rel="prev" href="../%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D9%86%D8%AD%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D9%82%D8%A7%D9%82%D9%8A-gradient-descent/">
       
       
-        <link rel="next" href="../%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B5%D8%A8%D9%8A%D8%A9/">
+        <link rel="next" href="../%D9%85%D8%A7-%D9%87%D9%8A-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B5%D8%A8%D9%8A%D8%A9-neural-network-definition/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>مفهوم الأوزان وعنصر المحايد - adjailia boubaker AI</title>
+        <title>مفهوم الأوزان (Weights) وعنصر المحايد (Bias) - adjailia boubaker AI</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#weights-bias" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              مفهوم الأوزان وعنصر المحايد
+              مفهوم الأوزان (Weights) وعنصر المحايد (Bias)
             
           </span>
         </div>
@@ -430,6 +430,53 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#weights" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الأوزان (Weights)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        عنصر المحايد أو الانحياز (Bias)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="عنصر المحايد أو الانحياز (Bias)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weight-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        التعديل (Weight Update)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -533,8 +580,16 @@
   
 
 
-<h1 id="_1">مفهوم الأوزان وعنصر المحايد<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ AI Mathematics.</p>
+<h1 id="weights-bias">مفهوم الأوزان (Weights) وعنصر المحايد (Bias)<a class="headerlink" href="#weights-bias" title="Permanent link">&para;</a></h1>
+<p>في عالم الذكاء الاصطناعي، الأوزان هي التي تحدد مدى أهمية كل مدخل من المدخلات في اتخاذ القرار.</p>
+<h2 id="weights">الأوزان (Weights)<a class="headerlink" href="#weights" title="Permanent link">&para;</a></h2>
+<p>تخيل الأوزان كمفاتيح تحكم (Knobs). إذا كان الوزن كبيراً، فهذا يعني أن هذا المدخل له تأثير قوي على النتيجة. عملية التعلم في الذكاء الاصطناعي هي في الحقيقة عملية "تعديل هذه الأوزان" للوصول إلى أقل نسبة خطأ.</p>
+<h2 id="bias">عنصر المحايد أو الانحياز (Bias)<a class="headerlink" href="#bias" title="Permanent link">&para;</a></h2>
+<p>يسمح الانحياز للشبكة العصبية بإزاحة دالة التفعيل يميناً أو يساراً، مما يعطيها مرونة أكبر في تمثيل البيانات المعقدة التي لا تمر بنقطة الأصل.</p>
+<h3 id="weight-update">التعديل (Weight Update)<a class="headerlink" href="#weight-update" title="Permanent link">&para;</a></h3>
+<p>نستخدم خوارزمية <strong>Gradient Descent</strong> لتعديل الأوزان بناءً على نسبة الخطأ:
+$$ w_{new} = w_{old} - \eta \cdot \frac{\partial L}{\partial w} $$
+حيث <span class="arithmatex"><span class="MathJax_Preview">\eta</span><script type="math/tex">\eta</script></span> هو معدل التعلم (Learning Rate).</p>
 
 
 
