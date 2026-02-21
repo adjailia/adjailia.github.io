@@ -1,8 +1,10 @@
 ---
 date: 2026-02-21
 authors: [boubaker]
+categories:
+  - General Mathematics
 ---
 
 # Deep Learning Model Training
 
-شرح عملي لمراحل تدريب نماذج التعلم العميق، بدءاً من تجهيز البيانات حتى مرحلة التقييم.
+هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ General Mathematics.

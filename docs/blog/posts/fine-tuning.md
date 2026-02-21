@@ -1,8 +1,10 @@
 ---
-date: 2026-02-18
+date: 2026-02-21
 authors: [boubaker]
+categories:
+  - General Mathematics
 ---
 
 # Fine-Tuning Large Language Models
 
-دليل شامل حول كيفية تدريب وتحسين النماذج اللغوية الكبيرة (LLMs) باستخدام تقنيات الـ Fine-Tuning.
+هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ General Mathematics.

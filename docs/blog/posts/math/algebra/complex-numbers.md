@@ -1,9 +1,10 @@
 ---
 date: 2026-02-21
 authors: [boubaker]
-categories: [General Mathematics]
+categories:
+  - General Mathematics
 ---
 
 # الأعداد المركبة
 
-هذا المقال جزء من السلسلة التعليمية الكبرى للرياضيات. سيتم شرح الأعداد المركبة بالتفصيل هنا.
+هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ General Mathematics.

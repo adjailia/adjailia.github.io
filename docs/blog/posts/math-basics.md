@@ -1,8 +1,10 @@
 ---
 date: 2026-02-21
 authors: [boubaker]
+categories:
+  - General Mathematics
 ---
 
 # Linear Algebra Basics for AI
 
-هذا المقال يشرح أساسيات الجبر الخطي وكيفية استخدامها في بناء المصفوفات والعمليات الرياضية للذكاء الاصطناعي.
+هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ General Mathematics.

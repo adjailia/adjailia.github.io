@@ -1,9 +1,10 @@
 ---
 date: 2026-02-21
 authors: [boubaker]
-categories: [General Mathematics]
+categories:
+  - General Mathematics
 ---
 
 # حل المعادلات التربيعية
 
-هذا المقال جزء من السلسلة التعليمية الكبرى للرياضيات. سيتم شرح حل المعادلات التربيعية بالتفصيل هنا.
+هذا المقال هو جزء من المرجع التعليمي الشامل الخاص بـ General Mathematics.
